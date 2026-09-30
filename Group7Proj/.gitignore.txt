@@ -1,0 +1,44 @@
+# This directory contains all the compiled resources, assets, and metadata for the project.
+/[Ll]ibrary/
+/[Mm]emoryCaptures/
+/[Vv]Logs/
+
+# Personal settings and local configurations
+/[Vv]isualStudio/
+/[Cc]rash[Rr]eports/
+/[Bb]uild/
+/[Bb]uilds/
+/[Bb]uildShip/
+/[Dd]ebug/
+/[Dd]ebugs/
+/[Ll]og/
+/[Ll]ogs/
+/UserData/
+
+# Automatically generated project files by IDEs
+/*.csproj
+/*.sln
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/*.pdb
+/*.opendb
+/*.VC.db
+
+# Unity 3D generated meta files for folders that are ignored
+/[Ll]ibrary.meta
+
+# Crashlytics generated file
+sysinfo.txt
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
