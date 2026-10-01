@@ -39,6 +39,8 @@ public class BulletSpawner : MonoBehaviour
             StandardFire();
         } else if (spawnerType == SpawnerType.Aim){
             
+        } else if (spawnerType == SpawnerType.Straight){
+            StandardFire();
         }
     }
 

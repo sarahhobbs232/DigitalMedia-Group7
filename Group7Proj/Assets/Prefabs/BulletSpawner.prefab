@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
   spawnerType: 1
   firingRate: 0.3
+  rotationSpeed: 10
   bullet: {fileID: 8904516326268127425, guid: ca60e452df6b577458c5ace56ebbaf74, type: 3}
   bulletTime: 10
   speed: 5
