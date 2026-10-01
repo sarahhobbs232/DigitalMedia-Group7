@@ -129,11 +129,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4700484
+      value: -4.22
       objectReference: {fileID: 0}
     - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6504722
+      value: -4.23
       objectReference: {fileID: 0}
     - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -174,6 +174,18 @@ PrefabInstance:
     - target: {fileID: 4658964640303628239, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_Name
       value: BulletSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: bulletTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: firingRate
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: rotationSpeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -898,10 +910,10 @@ GameObject:
   - component: {fileID: 1328151248}
   - component: {fileID: 1328151247}
   - component: {fileID: 1328151246}
-  - component: {fileID: 1328151249}
   - component: {fileID: 1328151250}
-  - component: {fileID: 1328151251}
   - component: {fileID: 1328151252}
+  - component: {fileID: 1328151254}
+  - component: {fileID: 1328151253}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1011,21 +1023,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1328151249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328151245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3471ae812216ae4399e37d548df1779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BHPlayerMovement
-  moveSpeed: 300
-  rb: {fileID: 1328151246}
-  move: {fileID: -1918108995137804629, guid: 5d45abd431dfc634c80a03e2a5ebc0b3, type: 3}
 --- !u!114 &1328151250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,18 +1053,6 @@ MonoBehaviour:
   m_DefaultActionMap: BulletHellGameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1328151251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328151245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7ce34509261b184a961a58e8b487bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BHPlayerHitDetection
 --- !u!61 &1328151252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1114,6 +1099,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1328151253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328151245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0776c6607a095848bdaf9e7fb850e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BHPlayerHitDetection
+--- !u!114 &1328151254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328151245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48166292c720964c85e88e3b31b1c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BHPlayerMovement
+  moveSpeed: 200
+  rb: {fileID: 1328151246}
+  move: {fileID: -1918108995137804629, guid: 5d45abd431dfc634c80a03e2a5ebc0b3, type: 3}
 --- !u!1 &1591232825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1293,79 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &1745861440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310650294960643769, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: spawnerType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658964640303628239, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: m_Name
+      value: BulletSpawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: bulletTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: firingRate
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: rotationSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
 --- !u!1 &2011904274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,7 +1547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.23
+      value: 4.05
       objectReference: {fileID: 0}
     - target: {fileID: 1654014344208632485, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1511,6 +1596,18 @@ PrefabInstance:
     - target: {fileID: 4658964640303628239, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
       propertyPath: m_Name
       value: BulletSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: bulletTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: firingRate
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826514625881342516, guid: 9ad363a186fb8744b8492f0b84f8b1d3, type: 3}
+      propertyPath: rotationSpeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1583,5 +1680,6 @@ SceneRoots:
   - {fileID: 7195661291907855862}
   - {fileID: 3605781468362425487}
   - {fileID: 274705111}
+  - {fileID: 1745861440}
   - {fileID: 1328151248}
   - {fileID: 985694866}
