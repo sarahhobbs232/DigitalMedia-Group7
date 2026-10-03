@@ -7,15 +7,25 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text resultText;
     public Circle circle;
+    public int nextSceneIndex = 0;
     public float timeLimit = 10f;
     public int target = 10;
 
     float timeLeft;
     int clicks;
     bool gameOver;
+    SceneResultTransition sceneTransition;
 
     void Start()
     {
+        Camera mainCamera = Camera.main;
+        if (mainCamera != null)
+        {
+            sceneTransition = mainCamera.GetComponent<SceneResultTransition>();
+            if (sceneTransition == null)
+                sceneTransition = mainCamera.gameObject.AddComponent<SceneResultTransition>();
+        }
+
         timeLeft = timeLimit;
         resultText.text = "";
         circle.MoveToRandomSpot();
@@ -48,11 +58,15 @@ public class GameManager : MonoBehaviour
     void EndGame(bool won)
     {
         gameOver = true;
-        circle.gameObject.SetActive(false);
-        resultText.text = won ? "You win!" : "Time's up!";
+        resultText.text = "";
         GameStatManager.addScore(100 * clicks);
-        GameStatManager.LoadScene(0);
-        Debug.Log(GameStatManager.score);
+        if (!won)
+            GameStatManager.takeDamage(1, false);
+
+        if (sceneTransition != null)
+            sceneTransition.Play(circle.transform, won, nextSceneIndex);
+        else
+            GameStatManager.LoadScene(nextSceneIndex);
     }
 
     void UpdateUI()

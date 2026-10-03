@@ -16,9 +16,9 @@ public static class GameStatManager
         score += increase;
     }
 
-    public static void takeDamage(int decrease = 1){
+    public static void takeDamage(int decrease = 1, bool restartWhenEmpty = true){
         health -= decrease; 
-        if(health <= 0){
+        if(health <= 0 && restartWhenEmpty){
             restartGame();
         }
     }
