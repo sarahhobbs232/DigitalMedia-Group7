@@ -16,12 +16,10 @@ public class BHPlayerHitDetection : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.tag == "Bullet"){
-            //TakeDamage
-            Debug.Log("Player Hit!");
+            GameStatManager.takeDamage(1);
             Destroy(other.gameObject);
         } else if(other.gameObject.tag == "Coin"){
             //Progress Success Condition
         }
-        Debug.Log("Collision");
     }
 }

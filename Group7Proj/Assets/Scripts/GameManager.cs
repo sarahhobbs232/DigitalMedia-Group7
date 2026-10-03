@@ -50,6 +50,9 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         circle.gameObject.SetActive(false);
         resultText.text = won ? "You win!" : "Time's up!";
+        GameStatManager.addScore(100 * clicks);
+        GameStatManager.LoadScene(0);
+        Debug.Log(GameStatManager.score);
     }
 
     void UpdateUI()
