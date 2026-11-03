@@ -1,5 +1,7 @@
 # DigitalMedia-Group7
 
+![Logo](sprites/SkillCheck-Logo.png)
+
 # Sprites
 * all sprites already made are in the sprites folder (mainly menu buttons)
 * more will be added as needed
