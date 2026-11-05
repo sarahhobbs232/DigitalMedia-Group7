@@ -1,0 +1,678 @@
+fileFormatVersion: 2
+guid: 12df833012a09a54e9056ba35d4235e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8819119357713806541
+    second: LifeProgression_0
+  - first:
+      213: -8910075390928397673
+    second: LifeProgression_1
+  - first:
+      213: -6880843538613119549
+    second: LifeProgression_2
+  - first:
+      213: -2787729963667752767
+    second: LifeProgression_3
+  - first:
+      213: -4161125064727460368
+    second: LifeProgression_4
+  - first:
+      213: 6401630071441255388
+    second: LifeProgression_5
+  - first:
+      213: -1391228490760387331
+    second: LifeProgression_6
+  - first:
+      213: -310675493049475461
+    second: LifeProgression_7
+  - first:
+      213: 210726074799135631
+    second: LifeProgression_8
+  - first:
+      213: -3831244521384780079
+    second: LifeProgression_9
+  - first:
+      213: 9129594065146712376
+    second: LifeProgression_10
+  - first:
+      213: -1866526307220342679
+    second: LifeProgression_11
+  - first:
+      213: 3420354171526050208
+    second: LifeProgression_12
+  - first:
+      213: -671391818334130160
+    second: LifeProgression_13
+  - first:
+      213: -6785260509158949103
+    second: LifeProgression_14
+  - first:
+      213: -6099657343677556234
+    second: LifeProgression_15
+  - first:
+      213: -8005928622743333781
+    second: LifeProgression_16
+  - first:
+      213: -3180074792610960203
+    second: LifeProgression_17
+  - first:
+      213: 2448875522881898272
+    second: LifeProgression_18
+  - first:
+      213: 1842290015605264546
+    second: LifeProgression_19
+  - first:
+      213: 7575230832753971860
+    second: LifeProgression_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LifeProgression_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 650
+        width: 478
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc47d44845ec36a70800000000000000
+      internalID: 8819119357713806541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 650
+        width: 477
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a53c9b3ad095480800000000000000
+      internalID: -8910075390928397673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_2
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 650
+        width: 478
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c55ce502455280a0800000000000000
+      internalID: -6880843538613119549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 479
+        width: 24
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8fed93e5eff49d0800000000000000
+      internalID: -2787729963667752767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 537
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f502fadcc6b046c0800000000000000
+      internalID: -4161125064727460368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 479
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbe6b7f1a827d850800000000000000
+      internalID: 6401630071441255388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_6
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 479
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df403d60f0d51bce0800000000000000
+      internalID: -1391228490760387331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 479
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7edd5cf84240bbf0800000000000000
+      internalID: -310675493049475461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_8
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 479
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b9051af36ace200800000000000000
+      internalID: 210726074799135631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_9
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 456
+        width: 61
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ded237186fa4dac0800000000000000
+      internalID: -3831244521384780079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_10
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 479
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831959c7e65d2be70800000000000000
+      internalID: 9129594065146712376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_11
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 479
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968b53e7634c816e0800000000000000
+      internalID: -1866526307220342679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_12
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 456
+        width: 61
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1f5d74ff9877f20800000000000000
+      internalID: 3420354171526050208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 479
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010371bc2bcbea6f0800000000000000
+      internalID: -671391818334130160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_14
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 479
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f381b4489e5d1a0800000000000000
+      internalID: -6785260509158949103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_15
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 479
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f91f7a96f9a95ba0800000000000000
+      internalID: -6099657343677556234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_16
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 479
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b645048b55a35e090800000000000000
+      internalID: -8005928622743333781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 537
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcef3b23da1ed3d0800000000000000
+      internalID: -3180074792610960203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_18
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 479
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027468830572cf120800000000000000
+      internalID: 2448875522881898272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_19
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 479
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a096612201219910800000000000000
+      internalID: 1842290015605264546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LifeProgression_20
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 479
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49213ed9e40a02960800000000000000
+      internalID: 7575230832753971860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LifeProgression_0: 8819119357713806541
+      LifeProgression_1: -8910075390928397673
+      LifeProgression_10: 9129594065146712376
+      LifeProgression_11: -1866526307220342679
+      LifeProgression_12: 3420354171526050208
+      LifeProgression_13: -671391818334130160
+      LifeProgression_14: -6785260509158949103
+      LifeProgression_15: -6099657343677556234
+      LifeProgression_16: -8005928622743333781
+      LifeProgression_17: -3180074792610960203
+      LifeProgression_18: 2448875522881898272
+      LifeProgression_19: 1842290015605264546
+      LifeProgression_2: -6880843538613119549
+      LifeProgression_20: 7575230832753971860
+      LifeProgression_3: -2787729963667752767
+      LifeProgression_4: -4161125064727460368
+      LifeProgression_5: 6401630071441255388
+      LifeProgression_6: -1391228490760387331
+      LifeProgression_7: -310675493049475461
+      LifeProgression_8: 210726074799135631
+      LifeProgression_9: -3831244521384780079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

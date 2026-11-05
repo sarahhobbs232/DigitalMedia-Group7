@@ -49,6 +49,6 @@ public class BulletHellManager : MonoBehaviour
         if (sceneTransition != null)
             sceneTransition.Play(player, won, nextSceneIndex);
         else
-            GameStatManager.LoadScene(nextSceneIndex);
+            GameStatManager.AdvanceToScene(nextSceneIndex);
     }
 }

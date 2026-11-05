@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void RegisterClick()
     {
-        if (gameOver) return;
+        if (gameOver || PauseMenu.IsPaused) return;
 
         clicks++;
         if (clicks >= target) EndGame(true);
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         if (sceneTransition != null)
             sceneTransition.Play(circle.transform, won, nextSceneIndex);
         else
-            GameStatManager.LoadScene(nextSceneIndex);
+            GameStatManager.AdvanceToScene(nextSceneIndex);
     }
 
     void UpdateUI()

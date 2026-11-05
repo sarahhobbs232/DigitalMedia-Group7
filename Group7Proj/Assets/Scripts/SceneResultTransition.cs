@@ -26,6 +26,9 @@ public class SceneResultTransition : MonoBehaviour
         if (transitionRoutine != null || player == null)
             return;
 
+        // The result zoom runs on unscaled time, so pausing stays locked until the next scene loads.
+        PauseMenu.BlockPausing();
+
         transitionRoutine = StartCoroutine(PlayRoutine(player, victory, nextSceneIndex));
     }
 
@@ -67,10 +70,7 @@ public class SceneResultTransition : MonoBehaviour
         if (resultObject != null)
             Destroy(resultObject);
 
-        if (GameStatManager.health <= 0)
-            GameStatManager.restartGame();
-        else
-            GameStatManager.LoadScene(nextSceneIndex);
+        GameStatManager.AdvanceToScene(nextSceneIndex);
     }
 
     private GameObject CreateResultText(Transform player, bool victory)
