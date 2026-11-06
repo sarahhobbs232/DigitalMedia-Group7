@@ -7,7 +7,7 @@ public static class GameStatManager
     public const string GameOverScene = "GameOver";
     public const int StartingHealth = 3;
 
-    private static string[] SceneNames = {"BulletHell", "CircleClicker", "FPSShooter"};
+    private static string[] SceneNames = {"BulletHell", "CircleClicker", "FPSShooter", "Platformer"};
     public static int health = StartingHealth;
     public static int score = 0;
 

@@ -512,7 +512,7 @@ MonoBehaviour:
   scoreText: {fileID: 1241588534}
   resultText: {fileID: 723441805}
   circle: {fileID: 325279894}
-  nextSceneIndex: 0
+  nextSceneIndex: 3
   timeLimit: 10
   target: 10
 --- !u!4 &1056790215

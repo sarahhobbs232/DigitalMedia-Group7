@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text resultText;
     public Circle circle;
-    public int nextSceneIndex = 0;
+    public int nextSceneIndex = 3;
     public float timeLimit = 10f;
     public int target = 10;
 
